@@ -379,6 +379,9 @@ a {
         margin-bottom: 40px;
         gap: 16px;
     }
+    .product-card {
+        min-height: 500px;
+    }
     .header-right {
         display: flex;
         align-items: center;
