@@ -260,7 +260,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
 }
 
 .featured-more-button {
@@ -274,7 +274,217 @@ a {
     border: 1px solid #F26376;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+.featured-buttons :hover {
+    color: #FFF;
+    background-color: #F26376;
+    transition: 0.5s
+}
+
+.footer-top {
+    background-color: #000;
+}
+
+.footer-top-content {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 103px 0 104px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-block-icon {
+    margin-bottom: 28px;
+}
+
+.content-block-title {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.content-block-description {
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-center {
+    background: linear-gradient( rgba(244, 244, 244, 0.70), rgba(244, 244, 244, 0.5)), url(img/footer-background.png);
+    background-size: 100% 100%;
+}
+
+.footer-center-content {
+    display: grid;
+    grid-template-columns: 360px 557px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 86px 0 126px;
+}
+
+.fcc-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fcc-left-img {
+    padding-bottom: 40px;
+}
+
+.visiter-comment {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 99px;
+}
+
+.visiter-comment-2nd {
+    font-style: italic;
+}
+
+.fcc-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.subscribe-title-2nd {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscribe-block {
+    display: flex;
+}
+
+.subscribe-block-left {
+    background: url(img/rect-grey.png);
+    display: flex;
+    width: 256px;
+    height: 49px;
+    padding: 7px 64px 6px 22px;
+    align-items: center;
+}
+
+.email-subscribe-field {
+    display: block;
+    padding: 7px 15px;
+    color: #222224;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #E1E1E1;
+    background-clip: padding-box;
+    border: 0px;
+}
+
+.subscribe-block-right {
+    background: url(img/rect-pink.png);
+    display: flex;
+    width: 100px;
+    height: 49px;
+    align-items: center;
+}
+
+.subscribe-block-right-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 20px 6px 8px;
+}
+
+.footer-bottom {
+    background-color: #000;
+}
+
+.footer-bottom-content {
+    display: grid;
+    grid-template-columns: 332px 332px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.text-all-rights-reserved {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fbc-right {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.facebook-container {
+    padding: 8px 10.6px 8px 10.9px;
+    background-color: #FFF;
+}
+
+.instagram-container {
+    padding: 8px 8.61px 7px 7.95px;
+    background-color: #FFF;
+}
+
+.pinterest-container {
+    padding: 8px 9.6px 8px 9.93px;
+    background-color: #FFF;
+}
+
+.twitter-container {
+    padding: 8px 7.61px 8px 7.95px;
+    background-color: #FFF;
+}
+
+.footer-bottom-icon-link :hover {
+    background-color: #F26376;
+    fill: #FFF;
+    transition: 0.5s
+}
+
+@media (max-width: 1024px) {
     .top-heading {
         padding-left: 100px;
     }
@@ -308,6 +518,21 @@ a {
     .item-big {
         background-size: 100%;
         min-height: 160px;
+    }
+    .featured-buttons {
+        margin-bottom: 64px;
+    }
+    .footer-top-content {
+        grid-template-columns: 360px;
+        gap: 48.5px;
+        justify-content: center;
+        padding: 48px 0 64px;
+    }
+    .footer-center-content {
+        grid-template-columns: 360px;
+        padding: 55px 0 140px;
+        justify-content: center;
+        gap: 48px;
     }
 }
 
@@ -368,6 +593,9 @@ a {
         padding-left: 1%;
         padding-right: 0%;
         margin-bottom: 32px;
+    }
+    .footer-center {
+        background-size: cover;
     }
 }
 
@@ -460,5 +688,68 @@ a {
         background-size: 100%;
         min-height: 111px;
         grid-column: inherit;
+    }
+    .featured-buttons {
+        margin-bottom: 96px;
+    }
+    .footer-top-content {
+        grid-template-columns: 347px;
+    }
+    .content-block-description {
+        font-size: 12.5px;
+    }
+    .delivery {
+        width: 43.467px;
+        height: 30.854px;
+    }
+    .sales {
+        width: 38.633px;
+        height: 38.573px;
+    }
+    .quality {
+        width: 45.432px;
+        height: 33.745px;
+    }
+    .footer-bottom-content {
+        gap: 59px;
+    }
+    .footer-center-content {
+        grid-template-columns: 340px;
+        padding: 55px 0 109px;
+    }
+    .fcc-left-img {
+        width: 95px;
+        height: 135px;
+    }
+    .visiter-comment {
+        font-size: 18px;
+    }
+    .subscribe-title-2nd {
+        font-size: 14px;
+    }
+    .subscribe-block-left {
+        background: url(img/rect-grey.png);
+        display: flex;
+        width: 200px;
+        height: 47px;
+        padding: 7px 64px 6px 22px;
+        align-items: center;
+    }
+    .subscribe-block-right {
+        width: 100px;
+        height: 47px;
+        padding: 7px 7px 6px 8px;
+        align-items: center;
+    }
+    .footer-bottom-content {
+        grid-template-columns: 332px;
+        padding: 43px 0 9px 0;
+        justify-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .fbc-left {
+        grid-column: 1;
+        grid-row: 2;
     }
 }
